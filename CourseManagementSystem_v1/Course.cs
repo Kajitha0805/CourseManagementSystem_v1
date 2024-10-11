@@ -25,5 +25,10 @@ namespace CourseManagementSystem_v1
         {
             return $"CourseId:{CourseId},Title:{Title},Duration:{Duration},Price:{Price}";
         }
+
+        public virtual string DisplayCourseInfo()
+        {
+            return $"Id:{CourseId},Title:{Title},Duration:{Duration},Price{Price}";
+        }
     }
 }

@@ -59,7 +59,22 @@ namespace CourseManagementSystem_v1
             }
             
         }
-        public decimal ValidateCoursePrice
+        public decimal ValidateCoursePrice()
+        {
+            while(true)
+            {
+                Console.WriteLine("Enter price:");
+                decimal price = decimal.Parse(Console.ReadLine());
+
+                if(price > 0)
+                {
+                    return price;
+                }else
+                {
+                    Console.WriteLine("Invalid price");
+                }
+            }
+        }
 
     }
 }
