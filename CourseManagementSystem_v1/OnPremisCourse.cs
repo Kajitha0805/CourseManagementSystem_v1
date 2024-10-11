@@ -15,6 +15,7 @@ namespace CourseManagementSystem_v1
         {
            Schedule=schedule;
            ClassroomCapacity=classroomCapacity;
+            TotalCourse++;
         }
 
         public override string DisplayCourseInfo()

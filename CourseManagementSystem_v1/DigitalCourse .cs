@@ -15,6 +15,7 @@ namespace CourseManagementSystem_v1
         {
             CourseLink = courseLink;
             FileSize = fileSize;
+            TotalCourse++;
         }
         public override string DisplayCourseInfo()
         {

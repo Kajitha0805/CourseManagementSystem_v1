@@ -8,6 +8,7 @@ namespace CourseManagementSystem_v1
 {
     internal class Course
     {
+         public static int TotalCourse {  get; set; }
          private string CourseId { get; set; }
          private string Title {  get; set; }
          private string Duration { get; set; }
@@ -20,6 +21,7 @@ namespace CourseManagementSystem_v1
             Title=title;
             Duration=duration;
             Price=price;
+            TotalCourse++;
         }
         public override string ToString()
         {
